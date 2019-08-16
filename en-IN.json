@@ -1,0 +1,62 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "rock paper scissor",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GameIntent",
+                    "slots": [
+                        {
+                            "name": "action",
+                            "type": "actiongame"
+                        }
+                    ],
+                    "samples": [
+                        "i am {action}",
+                        "i draw {action}",
+                        "i choose {action}",
+                        "{action}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "actiongame",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "rock"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "paper"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "scissors"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
