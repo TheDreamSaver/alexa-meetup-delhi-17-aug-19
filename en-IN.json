@@ -16,32 +16,33 @@
                     "samples": []
                 },
                 {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
                     "name": "GameIntent",
                     "slots": [
                         {
-                            "name": "action",
-                            "type": "actiongame"
+                            "name": "command",
+                            "type": "input"
                         }
                     ],
                     "samples": [
-                        "i am {action}",
-                        "i draw {action}",
-                        "i choose {action}",
-                        "{action}"
+                        "choose {command}",
+                        "i would like to choose {command}",
+                        "my choice is {command}",
+                        "{command}",
+                        "i choose {command}"
                     ]
-                },
-                {
-                    "name": "AMAZON.NavigateHomeIntent",
-                    "samples": []
                 }
             ],
             "types": [
                 {
-                    "name": "actiongame",
+                    "name": "input",
                     "values": [
                         {
                             "name": {
-                                "value": "rock"
+                                "value": "scissor"
                             }
                         },
                         {
@@ -51,7 +52,7 @@
                         },
                         {
                             "name": {
-                                "value": "scissors"
+                                "value": "rock"
                             }
                         }
                     ]
